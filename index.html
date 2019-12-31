@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
     
     <title>The Code Review</title>
 </head>
@@ -16,27 +17,28 @@
     </header>
     <h2>Signup for our Newsletter</h2>
     <p>Get the latest new on how your code is doing right in your inbox.</p>
-        <hr>
+        <hr class="firstline">
+        <hr class="secondline">
     <form action="#" method="get">
         <fieldset>
             <legend>Contact Information</legend><br>
                 <label for="full">Full Name:</label>
-                <input type="text" id="full" name="fname" placeholder="required"><br>
+                <input type="text" id="name" name="user_name" placeholder="required">
 
                 <label for="mail">Email Address:</label>
-                <input type="email" id="mail" name="emailaddress" placeholder="required"><br>
+                <input type="email" id="mail" name="user_email" placeholder="required">
 
                 <label for="number">Phone Number:</label>
-                 <input type="tel" id="number" name="phone"><br>
+                 <input type="tel" id="phone" name="user_phone">
 
                  <label for="street">Street Address:</label>
-                 <input type="text" id="street" name="address"><br>
+                 <input type="text" id="address" name="user_address">
 
                 <label for="city">City:</label>
-                <input type="text" id="city" name="city"><br>
+                <input type="text" id="city" name="user_city">
 
-                <label for="location">State:</label>
-                <select id="location" name="state">
+                <label for="state">State:</label>
+                <select id="state" name="user_state">
                      <optgroup label="Choose State">
                         <option value="alabama">Alabama</option>
                         <option value="alaska">Alaska</option>
@@ -50,7 +52,7 @@
                         <option value="georgia">Georgia</option>
                         <option value="hawaii">Hawaii</option>
                         <option value="idaho">Idaho</option>
-                         <option value="illinois">Illinois</option>
+                        <option value="illinois">Illinois</option>
                         <option value="indiana">Indiana</option>
                         <option value="iowa">Iowa</option>
                         <option value="kansas">Kansas</option>
@@ -93,24 +95,28 @@
                 <label for="zip">Zip Code:</label>
                 <input type="text" id="zip" name="zip"><br>
         </fieldset>
-        <hr>
+        
+        <hr class="thirdline">
+
         <fieldset>
-            <legend>Newsletter</legend>
-        <p>Select the newsletter you would like to receive</p>
-                <input type="checkbox" name="news1" value="html">HTML News<br>
-                <input type="checkbox" name="news2" value="css">CSS News<br>
-                <input type="checkbox" name="news3" value="javascript">Javascript News<br>
-        <p>Newsletter Format</p>
-                <input type="radio" id="HTML" name="checked" value="HTML" checked>HTML<br>
-                <input type="radio" id="plain" name="checked" value="plain">Plain Text
-        <p>Other topics you would like to hear about</p>
-                <label for="text"></label>
-                <textarea id="text" name="area">Text here</textarea><br>
-                <input type="submit" value="Sign Up">  
+            <legend>Newsletter</legend><br>
+            <label>Select the newsletter you would like to receive</label>
+                <input type="checkbox" id="html" value="html" name="news1"><label class="box" for="htmlnews">HTML News</label><br>
+                <input type="checkbox" id="css" value="css" name="news2"><label class="box" for="cssnews">CSS News</label><br>
+                <input type="checkbox" id="javascript"  value="javascript" name="news3"><label class="box" for="javascriptnews">Javascript News</label><br>
+            <label>Newsletter Format</label>
+                <input type="radio" id="HTML" name="checked" value="HTML" name="HTML" checked><label class="box" for="html">HTML</label><br>
+                <input type="radio" id="plain" name="checked" value="plain" name="plain"><label class="box" for="text">Text</label><br>
+            <label>Other topics you would like to hear about</label><br>
+
+            <label for="text"></label>
+            <textarea id="text" name="area">Text here</textarea>
+
+            <button input type="submit" value="Sign Up">Sign Up</button>  
         </fieldset>     
     </form>
 
-    <p>Copyright the code review</p>
+    <p class="footer">Copyright the code review</p>
 
 </body>
 </html>
