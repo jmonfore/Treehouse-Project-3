@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css">
     
     <title>The Code Review</title>
 </head>
@@ -17,29 +16,37 @@
     </header>
     <h2>Signup for our Newsletter</h2>
     <p>Get the latest new on how your code is doing right in your inbox.</p>
+
         <hr class="firstline">
         <hr class="secondline">
+        
     <form action="#" method="get">
         <fieldset>
             <legend>Contact Information</legend><br>
+            <div class="form-row">
                 <label for="full">Full Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="required">
-
+                <input required class="control-input" type="text" id="name" name="user_name" placeholder="Required">
+            </div><!--name-->
+            <div class="form-row">
                 <label for="mail">Email Address:</label>
-                <input type="email" id="mail" name="user_email" placeholder="required">
-
+                <input required class="control-input" type="email" id="mail" name="user_email" placeholder="Required">
+            </div><!--email div-->
+            <div class="form-row">
                 <label for="number">Phone Number:</label>
-                 <input type="tel" id="phone" name="user_phone">
-
+                 <input class="control-input" type="tel" id="phone" name="user_phone">
+            </div><!--number div-->
+            <div class="form-row">
                  <label for="street">Street Address:</label>
-                 <input type="text" id="address" name="user_address">
-
+                 <input class="control-input" type="text" id="address" name="user_address">
+            </div><!--street div-->
+            <div class="form-row">
                 <label for="city">City:</label>
-                <input type="text" id="city" name="user_city">
-
+                <input class="control-input" type="text" id="city" name="user_city">
+            </div><!--city div-->
+            <div class="form-row">
                 <label for="state">State:</label>
                 <select id="state" name="user_state">
-                     <optgroup label="Choose State">
+                     <optgroup label="State">
                         <option value="alabama">Alabama</option>
                         <option value="alaska">Alaska</option>
                         <option value="ariona">Arizona</option>
@@ -92,25 +99,28 @@
                         <option value="wyoming">Wyoming</option>
                     </optgroup>
                 </select><br>
+            </div><!--select div-->
+            <div class="form-row">  
                 <label for="zip">Zip Code:</label>
                 <input type="text" id="zip" name="zip"><br>
+            </div><!--zip div-->
         </fieldset>
-        
+
         <hr class="thirdline">
 
         <fieldset>
             <legend>Newsletter</legend><br>
-            <label>Select the newsletter you would like to receive</label>
+            <label>Select the newsletter you would like to receive</label><br>
                 <input type="checkbox" id="html" value="html" name="news1"><label class="box" for="htmlnews">HTML News</label><br>
                 <input type="checkbox" id="css" value="css" name="news2"><label class="box" for="cssnews">CSS News</label><br>
-                <input type="checkbox" id="javascript"  value="javascript" name="news3"><label class="box" for="javascriptnews">Javascript News</label><br>
-            <label>Newsletter Format</label>
+                <input type="checkbox" id="javascript"  value="javascript" name="news3"><label class="box" for="javascriptnews">Javascript News</label><br><br>
+            <label>Newsletter Format</label><br>
                 <input type="radio" id="HTML" name="checked" value="HTML" name="HTML" checked><label class="box" for="html">HTML</label><br>
-                <input type="radio" id="plain" name="checked" value="plain" name="plain"><label class="box" for="text">Text</label><br>
+                <input type="radio" id="plain" name="checked" value="plain" name="plain"><label class="box" for="text">Text</label><br><br>
             <label>Other topics you would like to hear about</label><br>
 
             <label for="text"></label>
-            <textarea id="text" name="area">Text here</textarea>
+            <textarea id="text" name="area"></textarea>
 
             <button input type="submit" value="Sign Up">Sign Up</button>  
         </fieldset>     

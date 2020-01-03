@@ -43,15 +43,17 @@ p {
 
 fieldset {
     border: none;
+    margin: 0 5px;
 }
 
 button {
-    padding: 20px 10px 20px 10px;
+    padding: 25px 10px 25px 10px;
     color: #FFF;
     background-color: #4ebbb5;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     font-style: normal;
+    font-weight: bolder;
     font-family: 'Merriweather', sans-serif;
     border-radius: 5px;
     width: 100%;
@@ -59,23 +61,93 @@ button {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 legend {
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bolder;
     color: #2d3945;
 }
 
-input[type="text"] {
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street"],
+input[type="city"],
+input[type="zip"],
+select,
+textarea {
+    background: rgba(255,255,255, 0.1);
+    background-color: #eff0f1;
+    border: none;
+    color: #9da3a8;
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Merriweather', sans-serif;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 1px 0px rgba(0,0,0,0.03) inset ;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 10px 8px 0;
+    transform: scale(1.5);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border: 3px solid #004177;
+}
+
+select {
+    padding: 10px;
+    height: 60px;
+}
+
+textarea {
+    padding: 50px;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
-    line-height: 1.5em;
+    line-height: 2em;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #4e6275;
 }
+
+#zip {
+    width: 50%;
+}
+
+
+::placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*====Validator Styles
+input :required:valid {
+    background-image: url(../images/icon.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 20px 20px;
+
+}
+===*/
 
 /*====Layout Styles===*/
 
@@ -94,7 +166,7 @@ label {
 .secondline,
 .thirdline {
     width: 90%;
-    border: 1px solid #000000; 
+    border: 1.5px solid #000000; 
     margin-bottom: 30px;
 }
 
@@ -108,19 +180,29 @@ label {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*--media query-*/
 
-@media (max-width: 768px) {
-   
+@media (min-width: 768px) {
+    .form-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-row label {
+        flex: none;
+        display: block;
+        width: 200px;
+        font-weight: lighter;
+        font-size: 1.250em;
+    }
+    
+    .form-row .control-input {
+        flex: 1 1 auto;
+        display: block;
+        margin-right: 8px;
+    }
+
+    fieldset{
+        margin: 0 100px;
+    }
 }
