@@ -14,15 +14,16 @@
     <header>
         <h1>THE CODE REVIEW</h1>
     </header>
+    <div class="container">
     <h2>Signup for our Newsletter</h2>
-    <p>Get the latest new on how your code is doing right in your inbox.</p>
+    <p class="subtitle">Get the latest new on how your code is doing right in your inbox.</p>
 
         <hr class="firstline">
         <hr class="secondline">
         
     <form action="#" method="get">
         <fieldset>
-            <legend>Contact Information</legend><br>
+            <legend>Contact Information</legend>
             <div class="form-row">
                 <label for="name">Full Name:</label>
                 <input required class="control-input" type="text" id="name" name="user_name" placeholder="Required">
@@ -37,7 +38,7 @@
             </div><!--number div-->
             <div class="form-row">
                  <label for="address">Street Address:</label>
-                 <input class="control-input" type="text" id="address" name="user_address">
+                 <input class="control-input" type="text" id="address" name="user_address" placeholder="Required">
             </div><!--street div-->
             <div class="form-row">
                 <label for="city">City:</label>
@@ -109,14 +110,14 @@
         <hr class="thirdline">
 
         <fieldset>
-            <legend>Newsletter</legend><br>
-            <label>Select the newsletter you would like to receive</label><br>
+            <legend>Newsletter</legend>
+            <p>Select the newsletter you would like to receive</p><br>
                 <input type="checkbox" id="html" value="html" name="news1"><label class="box" for="html">HTML News</label><br>
                 <input type="checkbox" id="css" value="css" name="news2"><label class="box" for="css">CSS News</label><br>
                 <input type="checkbox" id="javascript"  value="javascript" name="news3"><label class="box" for="javascript">Javascript News</label><br><br>
             <label>Newsletter Format</label><br>
-                <input type="radio" id="HTML" value="HTML" name="HTML" checked><label class="box" for="html">HTML</label><br>
-                <input type="radio" id="plain" value="plain" name="plain"><label class="box" for="text">Text</label><br><br>
+                <input type="radio" id="HTML" value="HTML" name="HTML"><label class="box" for="html">HTML</label><br>
+                <input type="radio" id="plain" value="plain" name="plain"><label class="box" for="plain">Text</label><br><br>
             <label>Other topics you would like to hear about</label><br>
 
             <label for="text"></label>
@@ -125,6 +126,7 @@
             <button type="submit" value="Sign Up">Sign Up</button>  
         </fieldset>     
     </form>
+    </div>
 
     <p class="footer">Copyright the code review</p>
 

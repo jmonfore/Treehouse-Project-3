@@ -32,13 +32,11 @@ h2 {
 }
 
 p {
-    text-align: center;
     color: #9da3a8;
     font-size: 1.4em;
     width: 90%;
     font-weight: normal;
     padding-bottom: 30px;
-    margin: 0 auto;
 }   
 
 fieldset {
@@ -68,6 +66,7 @@ legend {
     font-size: 1.75em;
     font-weight: bolder;
     color: #2d3945;
+    margin-bottom: 20px;
 }
 
 
@@ -146,9 +145,33 @@ label {
 /*====Base Layout Styles===*/
 
 .footer {
+    text-align: center;
     font-style: italic;
     font-size: 1.2em;
     color: #9da3a8;
+}
+
+.subtitle{
+    text-align: center;
+    color: #9da3a8;
+    font-size: 1.4em;
+    width: 90%;
+    font-weight: normal;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    transition: background-color 0.5s ease;
+    background-color: #eff0f1;
+    border: none;
+}
+
+input:hover,
+textarea:hover {
+    background-color: #2d3945;
+    color: #fff;
 }
 
 
@@ -199,4 +222,10 @@ label {
     fieldset{
         margin: 0 100px;
     }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
 }
