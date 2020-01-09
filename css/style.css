@@ -39,6 +39,13 @@ p {
     padding-bottom: 30px;
 }   
 
+form {
+    background-color: #f2f2f2;
+    padding: 50px 30px;
+    margin: 50px 25px;
+    border-radius: 10px;
+}
+
 fieldset {
     border: none;
     margin: 0 5px;
@@ -53,7 +60,7 @@ button {
     font-style: normal;
     font-weight: bolder;
     font-family: 'Merriweather', sans-serif;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
     border: 1px solid #49b2ad;
     border-width: 1px 1px 3px;
@@ -78,7 +85,7 @@ input[type="zip"],
 select,
 textarea {
     background: rgba(255,255,255, 0.1);
-    background-color: #eff0f1;
+    background-color: #fff;
     border: none;
     color: #9da3a8;
     font-size: 18px;
@@ -90,7 +97,7 @@ textarea {
     padding: 20px;
     width: 100%;
     box-shadow: 0 1px 0px rgba(0,0,0,0.03) inset ;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
@@ -107,7 +114,7 @@ input[type="email"]{
     padding: 20px;
     width: 100%;
     box-shadow: 0 1px 0px rgba(0,0,0,0.03) inset ;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
@@ -135,6 +142,7 @@ select {
 
 textarea {
     padding: 50px;
+    border-radius: 10px;
 }
 
 label {
@@ -181,7 +189,6 @@ label {
 input,
 textarea {
     transition: background-color 0.5s ease;
-    background-color: #eff0f1;
     border: none;
 }
 
@@ -237,7 +244,7 @@ textarea:hover {
     }
 
     fieldset{
-        margin: 0 100px;
+        margin: 0 25px;
     }
 
     .container {
